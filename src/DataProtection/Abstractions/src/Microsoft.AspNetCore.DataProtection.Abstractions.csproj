@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>ASP.NET Core data protection abstractions.
+Commonly used types:
+Microsoft.AspNetCore.DataProtection.IDataProtectionProvider
+Microsoft.AspNetCore.DataProtection.IDataProtector</Description>
+    <TargetFrameworks>$(DefaultNetFxTargetFramework);netstandard2.0;$(DefaultNetCoreTargetFramework)</TargetFrameworks>
+    <IsAspNetCoreApp>true</IsAspNetCoreApp>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>aspnetcore;dataprotection</PackageTags>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\shared\src\*.cs" />
+    <Compile Include="$(SharedSourceRoot)WebEncoders\**\*.cs" />
+  </ItemGroup>
+
+</Project>
